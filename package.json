@@ -1,0 +1,34 @@
+{
+  "name": "api-testing-unirest",
+  "version": "1.0.0",
+  "description": "project for api testing studies with unirest and vitest",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui --open",
+    "reporter": "npx vite preview --outDir ./html --open",
+    "coverage": "vitest run --coverage & npx vite preview --outDir ./html --open",
+    "clean": "rmdir /s /q html & rmdir /s /q coverage",
+    "format": "prettier . --check & prettier . --write"
+  },
+  "keywords": [
+    "unirest",
+    "vitest",
+    "automation testing",
+    "api testing"
+  ],
+  "author": "gustavo cardoso",
+  "license": "ISC",
+  "dependencies": {
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.2.2",
+    "@vitest/ui": "^1.2.2",
+    "chai": "^5.0.3",
+    "dotenv": "^16.4.1",
+    "mocha": "^10.2.0",
+    "prettier": "^3.2.5",
+    "vitest": "^1.2.2"
+  }
+}
