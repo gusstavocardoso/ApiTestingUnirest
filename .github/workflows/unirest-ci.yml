@@ -28,8 +28,8 @@ jobs:
       - name: Setar variaveis de ambiente
         run: |
           echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
-          echo "USER=${{ secrets.USER }}" >> .env
-          echo "PASS=${{ secrets.PASS }}" >> .env
+          echo "USERNAME=${{ secrets.USER }}" >> .env
+          echo "PASSWORD=${{ secrets.PASS }}" >> .env
 
       - name: Executar testes
         run: npm run test
